@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/signupapp/static/css/main.a91ddf64.css",
+    "main.js": "/signupapp/static/js/main.80deb4e4.js",
+    "index.html": "/signupapp/index.html",
+    "main.a91ddf64.css.map": "/signupapp/static/css/main.a91ddf64.css.map",
+    "main.80deb4e4.js.map": "/signupapp/static/js/main.80deb4e4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a91ddf64.css",
+    "static/js/main.80deb4e4.js"
+  ]
+}
