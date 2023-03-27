@@ -7,19 +7,27 @@ import Authenticated from './authenticated';
 
 function App() {
   const [currentForm, setCurrentForm] = useState('signin')
-  const [newUser, setNewUser] = useState([])
+  const [newUser, setNewUser] = useState([undefined,undefined])
+  
   const toggleForm = (formName)=> {
     setCurrentForm(formName)
   }
 
-  function addUser(createUser) {
-   setNewUser(createUser)
+  function addUser(createdUserEmail, createdUserPass) {
+   setNewUser([createdUserEmail,createdUserPass])
   }
-  function handleLogin(logingIn) {
-if (newUser===logingIn) {
-     setCurrentForm("auth")
+
+  function handleLogin(givenUserEmail,givenUserPass) {
+   
+
+if (newUser[1]===givenUserPass) {
+if (newUser[0]===givenUserEmail) {
+  setCurrentForm("auth")
 }else {
-  alert("Email ou Senha incorretos")
+  alert("Email incorreto")
+}   
+}else {
+  alert("Senha incorreta")
 }
   }
   
